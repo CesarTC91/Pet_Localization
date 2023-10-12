@@ -1,20 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import Header from '../Pet_Localization/src/components/Header'
+import {View, StyleSheet, ImageBackground} from "react-native";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+      <View style={styles.container}>
+        <ImageBackground style={styles.imageBgContainer} source={require('../Pet_Localization/assets/new_bg.png')} />
+          <Header />
+      </View>
+
   );
 }
 
+
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        alignContent: 'center'
+    },
+    imageBgContainer:{
+        flex: 1
+    }
+})
