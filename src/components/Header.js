@@ -13,8 +13,8 @@ export default function Header(){
 
 const styles = StyleSheet.create({
     logo:{
-        width:100,
-        height: 100,
-        marginTop: -570,
+        width:50,
+        height: 50,
+        marginTop: -540,
     }
 })

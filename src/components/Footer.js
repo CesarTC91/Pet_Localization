@@ -1,13 +1,15 @@
 import React from "react";
-import {View,  StyleSheet, Button} from "react-native";
+import {View,  StyleSheet, Button, TouchableOpacity, Text} from "react-native";
 
 export default function Footer(){
     return(
-        <View style={styles.containerFooter}>
-            <Button
-                title="Log In"
-                color = "#776056"
-            />
+        <View  style={styles.containerFooter}>
+            <TouchableOpacity >
+                <Button
+                    title={'Log In'}
+                    color={'#776056'}
+                />
+            </TouchableOpacity>
         </View>
     )
 }
@@ -15,6 +17,7 @@ export default function Footer(){
 const styles = StyleSheet.create({
     containerFooter: {
         justifyContent: 'center',
+        padding:1.5,
         borderRadius:15
     },
 })
