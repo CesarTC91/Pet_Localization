@@ -10,6 +10,7 @@ export default function Footer(){
                     color={'#776056'}
                 />
             </TouchableOpacity>
+            <Text style={{fontSize:10, fontWeight:'bold', textAlign:'center'}}>Don`t you have a account? <Text style={{color:'red'}}>Sing Up</Text></Text>
         </View>
     )
 }
